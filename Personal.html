@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelvin Cárima | Ingeniero de Sistemas y Estratega Tecnológico</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide-react@latest/dist/lucide-react.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <style>
+        /* Estilo personalizado para la fuente Inter */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilos para el scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #1e293b;
+        }
+        /* Animación de entrada */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Header -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-40 w-full border-b border-slate-700">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-white">KC</a>
+                </div>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#sobre-mi" class="text-slate-300 hover:text-white transition-colors duration-300">Sobre Mí</a>
+                    <a href="#proyectos" class="text-slate-300 hover:text-white transition-colors duration-300">Proyectos</a>
+                    <a href="#habilidades" class="text-slate-300 hover:text-white transition-colors duration-300">Habilidades</a>
+                    <a href="#contacto" class="bg-sky-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-sky-600 transition-all duration-300">Contacto</a>
+                </nav>
+                <div class="md:hidden">
+                    <!-- Mobile menu button can be added here -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-20 md:py-32 bg-slate-900 text-white overflow-hidden">
+            <div class="absolute inset-0 bg-grid-slate-800 [mask-image:linear-gradient(0deg,#000000,rgba(0,0,0,0.6))]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-transparent"></div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+                <h1 class="text-4xl md:text-6xl font-black tracking-tighter mb-4 fade-in" style="animation-delay: 0.2s;">Kelvin A. Cárima Marín</h1>
+                <p class="text-xl md:text-2xl text-slate-300 max-w-3xl mx-auto mb-8 fade-in" style="animation-delay: 0.4s;">Ingeniero de Sistemas con más de 20 años de experiencia, uniendo la docencia y la tecnología para construir soluciones innovadoras y formar a la próxima generación de profesionales.</p>
+                <div class="flex justify-center space-x-4 fade-in" style="animation-delay: 0.6s;">
+                    <a href="#proyectos" class="bg-white text-slate-900 px-6 py-3 rounded-md font-bold hover:bg-slate-200 transition-all duration-300">Ver Proyectos</a>
+                    <a href="Resumen Curricular Kelvin Cárima Jun 2025.docx" download class="border-2 border-slate-500 text-slate-300 px-6 py-3 rounded-md font-bold hover:bg-slate-800 hover:text-white transition-all duration-300">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Mí -->
+        <section id="sobre-mi" class="py-20 lg:py-28">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Mi Propuesta de Valor</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">No solo construyo software; construyo puentes entre la teoría y la práctica.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="fade-in">
+                        <img src="https://placehold.co/600x600/1e293b/ffffff?text=KC" alt="Foto de Kelvin Cárima" class="rounded-lg shadow-2xl mx-auto">
+                    </div>
+                    <div class="fade-in" style="animation-delay: 0.2s;">
+                        <h3 class="text-2xl font-bold mb-4">Más que un Ingeniero, un Estratega y Mentor</h3>
+                        <p class="text-slate-600 mb-4">
+                            Mi carrera es una fusión de dos pasiones: la tecnología y la educación. Como Ingeniero de Sistemas, he liderado proyectos, optimizado plataformas y resuelto complejos desafíos técnicos. Como docente, he tenido el privilegio de guiar a futuros profesionales, inculcando no solo conocimiento técnico, sino también un pensamiento crítico y una ética de trabajo sólida.
+                        </p>
+                        <p class="text-slate-600 mb-6">
+                            Mi visión es aplicar mi experiencia para crear soluciones tecnológicas que sean eficientes, escalables y, sobre todo, humanas. Creo firmemente que la tecnología más avanzada es aquella que empodera a las personas. Mi maestría en Tecnología de la Información es el siguiente paso en este viaje, profundizando mis conocimientos en áreas de vanguardia como la Inteligencia Artificial para seguir aportando valor tangible.
+                        </p>
+                        <div class="flex items-center space-x-3 text-sky-600 font-semibold">
+                            <i data-lucide="check-circle"></i><span>Resolución de Problemas</span>
+                            <i data-lucide="check-circle"></i><span>Liderazgo de Proyectos</span>
+                            <i data-lucide="check-circle"></i><span>Formación y Mentoría</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos" class="py-20 lg:py-28 bg-slate-100">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Proyectos Destacados</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Evidencia de mi capacidad para transformar ideas en resultados.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-lg border border-slate-200 fade-in">
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <span class="text-sky-500 font-semibold">Proyecto de Maestría</span>
+                            <h3 class="text-2xl font-bold mt-2 mb-4">Agente Interactivo con IA para Marca Personal</h3>
+                            <p class="text-slate-600 mb-4">
+                                Este proyecto, mi "doble digital", es una demostración práctica de cómo la IA puede ser utilizada para crear herramientas de comunicación personalizadas y efectivas. No es un simple chatbot, es un asistente virtual entrenado con mi perfil profesional.
+                            </p>
+                            <div class="space-y-3">
+                                <p><strong><i data-lucide="alert-circle" class="inline-block mr-2"></i>El Problema:</strong> Los perfiles profesionales estáticos (CVs, portafolios) no permiten una interacción directa y dinámica con reclutadores o colaboradores.</p>
+                                <p><strong><i data-lucide="cpu" class="inline-block mr-2"></i>La Solución:</strong> Desarrollé un agente conversacional que responde preguntas sobre mi experiencia, habilidades y proyectos en tiempo real, utilizando un modelo de procesamiento de lenguaje natural basado en mi información curricular.</p>
+                                <p><strong><i data-lucide="bar-chart-2" class="inline-block mr-2"></i>Resultados:</strong> Una experiencia de usuario única que proyecta una imagen de vanguardia tecnológica y proactividad, permitiendo una evaluación más profunda y rápida de mi perfil.</p>
+                            </div>
+                        </div>
+                        <div class="bg-slate-800 rounded-lg p-6 flex items-center justify-center">
+                            <i data-lucide="bot" class="text-sky-400 w-32 h-32"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades" class="py-20 lg:py-28">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Caja de Herramientas Técnicas</h2>
+                    <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Las tecnologías y metodologías que domino para dar vida a los proyectos.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
+                    <!-- Habilidades extraídas del CV -->
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">HTML</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">PHP</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Java</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Laravel</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">MySQL</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">C++</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Visual Basic</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Linux (Canaima)</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Redes</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">MS Project</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Gestión de Proyectos</div>
+                    <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Metodologías Ágiles</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="py-20 lg:py-28 bg-slate-900 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold tracking-tight">Iniciemos una Conversación</h2>
+                    <p class="mt-4 text-lg text-slate-300 max-w-2xl mx-auto">Estoy disponible para nuevos desafíos y colaboraciones. Hablemos de cómo podemos trabajar juntos.</p>
+                </div>
+                <div class="max-w-xl mx-auto text-center">
+                    <p class="text-lg mb-2">Envíame un correo electrónico a:</p>
+                    <a href="mailto:kelvin.carima@gmail.com" class="text-2xl font-bold text-sky-400 hover:text-sky-300 transition-colors">kelvin.carima@gmail.com</a>
+                    <div class="flex justify-center space-x-6 mt-8">
+                        <!-- Añadir enlaces a LinkedIn, GitHub, etc. -->
+                        <a href="https://www.linkedin.com/feed/" target="_blank" class="text-slate-400 hover:text-white"><i data-lucide="linkedin" class="w-8 h-8"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-slate-400">
+            <p>&copy; 2025 Kelvin Cárima. Diseñado y desarrollado como parte de mi marca personal.</p>
+            <p class="text-sm mt-2">Listo para desplegar en Vercel.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+    <div id="chatbot-container" class="fixed bottom-5 right-5 z-50">
+        <!-- Botón del Chat -->
+        <button id="chatbot-toggle" class="bg-sky-500 text-white w-16 h-16 rounded-full shadow-lg flex items-center justify-center hover:bg-sky-600 transition-transform transform hover:scale-110">
+            <i data-lucide="bot" class="w-8 h-8"></i>
+        </button>
+
+        <!-- Ventana del Chat (oculta por defecto) -->
+        <div id="chatbot-window" class="hidden absolute bottom-20 right-0 w-80 bg-white rounded-lg shadow-2xl border border-slate-200 flex flex-col" style="height: 450px;">
+            <!-- Header del Chat -->
+            <div class="p-4 bg-slate-800 text-white rounded-t-lg flex justify-between items-center">
+                <div>
+                    <h3 class="font-bold">Asistente Virtual</h3>
+                    <p class="text-xs text-slate-300">Potenciado por IA</p>
+                </div>
+                <button id="chatbot-close" class="text-slate-300 hover:text-white">&times;</button>
+            </div>
+
+            <!-- Mensajes del Chat -->
+            <div id="chatbot-messages" class="flex-1 p-4 overflow-y-auto">
+                <!-- Mensaje de bienvenida -->
+                <div class="mb-3">
+                    <p class="bg-slate-200 text-slate-800 text-sm rounded-lg p-2 inline-block">¡Hola! Soy el asistente virtual de Kelvin. Puedes preguntarme sobre su experiencia, habilidades o proyectos. ¿Cómo puedo ayudarte?</p>
+                </div>
+            </div>
+
+            <!-- Input del Chat -->
+            <div class="p-2 border-t border-slate-200">
+                <div class="flex">
+                    <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta..." class="flex-1 px-3 py-2 border border-slate-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-sky-500 text-sm">
+                    <button id="chatbot-send" class="bg-sky-500 text-white px-4 rounded-r-md hover:bg-sky-600 font-bold">&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Inicializar Lucide Icons
+        lucide.createIcons();
+
+        // --- Lógica del Chatbot ---
+
+        const chatbotToggle = document.getElementById('chatbot-toggle');
+        const chatbotWindow = document.getElementById('chatbot-window');
+        const chatbotClose = document.getElementById('chatbot-close');
+        const chatbotMessages = document.getElementById('chatbot-messages');
+        const chatbotInput = document.getElementById('chatbot-input');
+        const chatbotSend = document.getElementById('chatbot-send');
+
+        // Base de conocimiento del chatbot (extraída del CV)
+        const knowledgeBase = {
+            "saludo": "¡Hola! Soy el asistente virtual de Kelvin. Estoy aquí para responder tus preguntas sobre su perfil profesional.",
+            "despedida": "¡Gracias por tu interés! Si tienes más preguntas, no dudes en contactar a Kelvin directamente. ¡Que tengas un buen día!",
+            "nombre": "Mi creador es Kelvin Antonio Cárima Marín, un Ingeniero de Sistemas y docente apasionado por la tecnología.",
+            "experiencia": "Kelvin tiene más de 20 años de experiencia. Ha trabajado como Docente en instituciones como la UNEG y la UNEFA, y como Analista de TI y Soporte en empresas como Sine Boiler & Burner y Petrocedeño. Su experiencia combina el sector educativo y el corporativo.",
+            "educacion": "Kelvin es Ingeniero de Sistemas por la Universidad Nacional Experimental de Guayana (UNEG). Actualmente, está cursando una Maestría en Tecnología de la Información. También posee un diplomado en Competencias Pedagógicas.",
+            "habilidades": "Kelvin tiene un amplio set de habilidades técnicas, incluyendo lenguajes como Java, PHP, C++, y frameworks como Laravel. Domina bases de datos como MySQL, sistemas operativos como Linux y Windows, y herramientas de gestión como MS Project. También tiene experiencia en redes y seguridad.",
+            "proyectos": "Uno de sus proyectos más recientes y relevantes es el desarrollo de este mismo asistente de IA. El objetivo es demostrar cómo la IA puede crear una marca personal dinámica e interactiva, yendo más allá de un CV estático.",
+            "contacto": "Puedes contactar a Kelvin a través de su correo electrónico: kelvin.carima@gmail.com. También puedes encontrarlo en LinkedIn.",
+            "linkedin": "Kelvin mantiene su perfil de LinkedIn actualizado con sus últimos proyectos y logros. Te recomiendo visitarlo para obtener la información más reciente. Puedes encontrar el enlace en la sección de contacto.",
+            "default": "Esa es una excelente pregunta. No tengo la respuesta exacta en mi base de datos, pero te recomiendo contactar a Kelvin directamente por correo o revisar su perfil de LinkedIn para obtener más detalles."
+        };
+
+        // Función para obtener la respuesta del bot
+        function getBotResponse(userInput) {
+            userInput = userInput.toLowerCase().trim();
+            if (userInput.includes("hola") || userInput.includes("buenos dias")) return knowledgeBase.saludo;
+            if (userInput.includes("adios") || userInput.includes("gracias")) return knowledgeBase.despedida;
+            if (userInput.includes("experiencia") || userInput.includes("trabajo")) return knowledgeBase.experiencia;
+            if (userInput.includes("educacion") || userInput.includes("estudios") || userInput.includes("maestria")) return knowledgeBase.educacion;
+            if (userInput.includes("habilidades") || userInput.includes("skills") || userInput.includes("tecnologias")) return knowledgeBase.habilidades;
+            if (userInput.includes("proyectos") || userInput.includes("portafolio")) return knowledgeBase.proyectos;
+            if (userInput.includes("contacto") || userInput.includes("correo") || userInput.includes("email")) return knowledgeBase.contacto;
+            if (userInput.includes("linkedin")) return knowledgeBase.linkedin;
+            if (userInput.includes("nombre") || userInput.includes("quien eres")) return knowledgeBase.nombre;
+            return knowledgeBase.default;
+        }
+
+        // Función para añadir mensajes al chat
+        function addMessage(message, sender) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('mb-3');
+            
+            const bubble = document.createElement('p');
+            bubble.classList.add('text-sm', 'rounded-lg', 'p-2', 'inline-block');
+            bubble.textContent = message;
+
+            if (sender === 'user') {
+                messageElement.classList.add('text-right');
+                bubble.classList.add('bg-sky-500', 'text-white');
+            } else {
+                bubble.classList.add('bg-slate-200', 'text-slate-800');
+            }
+            
+            messageElement.appendChild(bubble);
+            chatbotMessages.appendChild(messageElement);
+            chatbotMessages.scrollTop = chatbotMessages.scrollHeight; // Auto-scroll
+        }
+
+        // Manejar el envío de mensajes
+        function handleSend() {
+            const userInput = chatbotInput.value;
+            if (!userInput.trim()) return;
+
+            addMessage(userInput, 'user');
+            chatbotInput.value = '';
+
+            // Simular que el bot está "pensando"
+            setTimeout(() => {
+                const botResponse = getBotResponse(userInput);
+                addMessage(botResponse, 'bot');
+            }, 800);
+        }
+
+        // Event Listeners
+        chatbotToggle.addEventListener('click', () => {
+            chatbotWindow.classList.toggle('hidden');
+        });
+
+        chatbotClose.addEventListener('click', () => {
+            chatbotWindow.classList.add('hidden');
+        });
+
+        chatbotSend.addEventListener('click', handleSend);
+        chatbotInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                handleSend();
+            }
+        });
+
+        // --- Lógica de Animaciones al hacer scroll ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section, .fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+    </script>
+</body>
+</html>
