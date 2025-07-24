@@ -61,8 +61,18 @@
                         <a href="#habilidades" class="text-slate-300 hover:text-white transition-colors duration-300">Habilidades</a>
                         <a href="#contacto" class="bg-sky-500 text-white px-4 py-2 rounded-md font-semibold hover:bg-sky-600 transition-all duration-300">Contacto</a>
                     </nav>
-                    <div class="md:hidden">
-                        <!-- Mobile menu button can be added here -->
+                    <div class="md:hidden flex items-center"></div>
+                        <!-- Botón menú móvil -->
+                        <button id="mobile-menu-btn" class="bg-sky-200 text-slate-800 p-2 rounded-lg shadow hover:bg-sky-300 transition-colors">
+                            <i data-lucide="menu" class="w-8 h-8"></i>
+                        </button>
+                        <!-- Menú móvil (oculto por defecto) -->
+                        <nav id="mobile-nav" class="hidden absolute top-16 right-4 bg-white rounded-lg shadow-xl p-6 flex flex-col space-y-4 border border-sky-100 z-50">
+                            <a href="#sobre-mi" class="text-slate-700 hover:text-sky-600 transition-colors font-medium">Sobre Mí</a>
+                            <a href="#proyectos" class="text-slate-700 hover:text-sky-600 transition-colors font-medium">Proyectos</a>
+                            <a href="#habilidades" class="text-slate-700 hover:text-sky-600 transition-colors font-medium">Stack Tecnológico</a>
+                            <a href="#contacto" class="bg-sky-400 text-white px-4 py-2 rounded-md font-semibold hover:bg-sky-500 transition-all">Contacto</a>
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -150,19 +160,90 @@
                         <p class="mt-4 text-lg text-slate-600 max-w-2xl mx-auto">Las tecnologías y metodologías que domino para dar vida a los proyectos.</p>
                     </div>
                     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
-                        <!-- Habilidades extraídas del CV -->
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">HTML</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">PHP</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Java</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Laravel</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">MySQL</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">C++</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Visual Basic</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Linux (Canaima)</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Redes</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">MS Project</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Gestión de Proyectos</div>
-                        <div class="bg-white p-4 rounded-lg shadow-md border border-slate-200 fade-in">Metodologías Ágiles</div>
+                        <!-- Habilidades con logos -->
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="code" class="w-10 h-10 text-orange-500 mb-2"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-10 h-10 mb-2">
+                            <span>PHP</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-10 h-10 mb-2">
+                            <span>Java</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel" class="w-10 h-10 mb-2">
+                            <span>Laravel</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="w-10 h-10 mb-2">
+                            <span>MySQL</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-10 h-10 mb-2">
+                            <span>C++</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualbasic/visualbasic-original.svg" alt="Visual Basic" class="w-10 h-10 mb-2">
+                            <span>Visual Basic</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="w-10 h-10 mb-2">
+                            <span>Linux (Canaima)</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="wifi" class="w-10 h-10 text-sky-500 mb-2"></i>
+                            <span>Redes</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" class="w-10 h-10 mb-2" fill="none">
+                                <rect width="48" height="48" rx="8" fill="#21A366"/>
+                                <path d="M34 14H24V34H34C35.1046 34 36 33.1046 36 32V16C36 14.8954 35.1046 14 34 14Z" fill="#107C41"/>
+                                <path d="M24 14H14C12.8954 14 12 14.8954 12 16V32C12 33.1046 12.8954 34 14 34H24V14Z" fill="#33C481"/>
+                                <text x="16" y="30" font-size="10" fill="white" font-family="Arial, Helvetica, sans-serif" font-weight="bold">P</text>
+                            </svg>
+                            <span>MS Project</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="clipboard-list" class="w-10 h-10 text-green-500 mb-2"></i>
+                            <span>Gestión de Proyectos</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="zap" class="w-10 h-10 text-yellow-500 mb-2"></i>
+                            <span>Metodologías Ágiles</span>
+                        </div>
+                        <!-- Nuevas habilidades agregadas -->
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva" class="w-10 h-10 mb-2">
+                            <span>Canva</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="w-10 h-10 mb-2">
+                            <span>Photoshop</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="shopping-bag" class="w-10 h-10 text-pink-500 mb-2"></i>
+                            <span>Inshop</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" class="w-10 h-10 mb-2">
+                            <span>Github</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 mb-2" viewBox="0 0 24 24" fill="none">
+                                <rect x="3" y="7" width="18" height="10" rx="2" stroke="#6366f1" stroke-width="2" fill="none"/>
+                                <circle cx="8" cy="12" r="2" stroke="#6366f1" stroke-width="2" fill="none"/>
+                                <circle cx="16" cy="12" r="2" stroke="#6366f1" stroke-width="2" fill="none"/>
+                                <path d="M8 14c1.333 1 2.667 1 4 0" stroke="#6366f1" stroke-width="2" fill="none"/>
+                            </svg>
+                            <span>Experiencias Inmersivas</span>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md fade-in flex flex-col items-center">
+                            <i data-lucide="brain-cog" class="w-10 h-10 text-blue-500 mb-2"></i>
+                            <span>IA</span>
+                        </div>
                     </div>
                 </div>
             </section>
